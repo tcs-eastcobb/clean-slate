@@ -13,3 +13,13 @@ sudo apt install zsh
 chsh -s $(which zsh)
 echo $SHELL
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
+
+## Link Files
+rm -rf ~/.bashrc
+rm -rf ~/.zshrc
+rm -rf ~/.zsh_history
+
+ln -sf ~/clean-slate/sysrun/.bashrc ~/
+ln -sf ~/clean-slate/sysrun/.zshrc ~/
+ln -sf ~/clean-slate/sysrun/.zsh_history ~/
