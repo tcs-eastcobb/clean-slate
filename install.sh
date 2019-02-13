@@ -15,8 +15,8 @@ echo $SHELL
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
 # Install Node
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -i
-sudo apt install nodejs
+# curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -i
+# sudo apt-get install nodejs
 
 ## Link Files
 rm -rf ~/.bashrc
