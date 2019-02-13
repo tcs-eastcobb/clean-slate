@@ -18,10 +18,6 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -i
 sudo apt install nodejs
 
-# Spaceship Prompt
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
 ## Link Files
 rm -rf ~/.bashrc
 rm -rf ~/.zshrc
@@ -30,3 +26,7 @@ rm -rf ~/.zsh_history
 ln -sf ~/clean-slate/sysrun/.bashrc ~/
 ln -sf ~/clean-slate/sysrun/.zshrc ~/
 ln -sf ~/clean-slate/sysrun/.zsh_history ~/
+
+# Space Time
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
