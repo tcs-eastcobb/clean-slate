@@ -28,8 +28,8 @@ ln -sf ~/clean-slate/sysrun/.zshrc ~/
 ln -sf ~/clean-slate/sysrun/.zsh_history ~/
 
 # Space Time
-rm -rf "~/.oh-my-zsh/themes/spaceship-prompt"
-rm -rf "~/.oh-my-zsh/themes/spaceship.zsh-theme"
+sudo rm -rf "~/.oh-my-zsh/themes/spaceship-prompt"
+sudo rm -rf "~/.oh-my-zsh/themes/spaceship.zsh-theme"
 cd ~/.oh-my-zsh/themes/
 git clone https://github.com/denysdovhan/spaceship-prompt.git
 sudo ln -s "~/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme" "~/.oh-my-zsh/themes/"
