@@ -14,6 +14,13 @@ chsh -s $(which zsh)
 echo $SHELL
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
+# Install Node
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -i
+sudo apt install nodejs
+
+# Spaceship Prompt
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 ## Link Files
 rm -rf ~/.bashrc
